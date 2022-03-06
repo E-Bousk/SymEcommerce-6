@@ -23,7 +23,7 @@ class ProductsFixtures extends Fixture
             $category = $this->getReference('cat-' . rand(1, 8));
 
             $product = new Products();
-            $product->setName($faker->text(5))
+            $product->setName($faker->text(15))
                 ->setDescription($faker->text())
                 ->setPrice($faker->numberBetween(900, 150000))
                 ->setStock($faker->numberBetween(0, 10))
